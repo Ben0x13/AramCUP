@@ -112,6 +112,40 @@
             color: white;
             font-size: 2rem;
         }
+        main .titre {
+            background-color: rgb(56, 54, 54);
+            text-align: center;
+            padding: 1px 0;
+            color: white;
+            font-size: 2rem;            
+        }
+        main .titre h3 {
+            font-size: 2rem;
+            color: lightgrey;
+            padding: 0px 20px;
+            display: block;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        main .orga {
+            background-color: rgb(56, 54, 54);
+            text-align: center;
+            padding: 0px 0;
+            color: white;
+        }
+        main .orga p {
+            font-size: 1rem;
+            color: lightgrey;
+            padding: 5px 0px;
+            display: block;
+            border-radius: 1px;
+            margin-left: auto;
+            text-align: center;
+
+
+        }
         footer {
             background-color: #333131;
             color: white;
@@ -120,6 +154,44 @@
             width: 100%;
             margin-top: auto;
             position: relative;
+        }
+        button {
+            border-radius: 10px;
+        }
+        button a {
+            color: white; /* Couleur blanche */
+            text-decoration: none; /* Supprime le soulignement */
+        }
+
+        button a:visited {
+        color: white; /* Garde la couleur blanche même après la visite */
+        }
+
+        button a:hover {
+        color: #ddd; /* Optionnel : change légèrement la couleur au survol */
+        }
+
+        button a:active {
+        color: white; /* Garde la couleur blanche lorsqu'on clique dessus */
+        }
+        .aram-solo-cup {
+            text-align: center;
+            padding: 15px;
+            background-color: #2d2d2d; /* Couleur de fond de la section */
+        }
+
+        .aram-solo-cup h2 {
+            color: #bfc9d1; /* Couleur du titre */
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .aram-solo-cup p {
+            color: #ccc; /* Couleur du texte */
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto; /* Centrer le texte */
+            line-height: 1.5;
         }
     </style>
 </head>
@@ -132,21 +204,22 @@
     </div>
     <nav>
         <a href="index.html">Accueil</a>
-        <a href="#">Classement</a>
+        <a href="classement.html">Classement</a>
         <a href="Participants.html">Participants</a>
         <a href="#">Cashprize</a>
-        <a href="#">Statistiques</a>
+        <a href="statistiques.html">Statistiques</a>
         <a href="regles.html">Règles</a>
     </nav>
 </header>
 
 <main><header><h1>ARAM SOLO CUP</h1></header></main>
+<main><header class="titre"><h3>Tournois organisés par Nova</h3></header></main>
+<main><header class="orga"><p>Première édition de la Aram Solo Cup avec 20 participants prêts à remporter le cashprize de 50€.<p></header></main>
 
 <div class="content">
-    <h2>Tournois organisés par Nova</h2>
-    <p>Première édition de la Aram Solo Cup avec 20 participants prêts à remporter le cashprize de 50€.</p>
     
     <h2>Tout savoir</h2>
+    
     <div class="cards">
         <div class="card">
             <img src="participant.png" alt="Participants">
@@ -156,15 +229,26 @@
         <div class="card">
             <img src="trophy.png" alt="Cashprize">
             <p>Répartition des récompenses.</p>
-            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;"></button>
+            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;"><a href="cashprize.html">Cashprize</a></button>
         </div>
         <div class="card">
             <img src="stats.png" alt="Statistiques">
             <p>Différentes statistiques.</p>
-            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;">Statistiques</button>
+            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;"><a href="statistiques.html">Statistiques</a></button>
         </div>
     </div>
 </div>
+<main>
+    <section class="aram-solo-cup">
+        <h2>Qu'est-ce que l'Aram Solo Cup ?</h2>
+        <p>
+            L'Aram Solo Cup est un tournoi organisé par NovaMat sur le jeu 
+            <em>League of Legends</em>, en mode ARAM. Un classement sera établi en fonction 
+            des victoires de chaque joueur sur une période de 3 jours. Attention, chaque joueur 
+            peut être éliminé après 5 défaites lors du défi.
+        </p>
+    </section>
+</main>
 
 <footer>
     <p>© 2025 NovaMat - Copyright. </p>
