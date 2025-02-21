@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - Aram Solo Cup</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333131;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+            font-size: 2rem;
+        }
+
+        .content {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 80px;
+            margin-bottom: 10px;
+        }
+
+        .footer {
+            background-color: #333131;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        main header h1 {
+            font-size: 4rem;
+            color: white;
+            padding: 10px 20px;
+            display: block;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        main header {
+            background-color: rgb(39, 37, 37);
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            font-size: 2rem;
+        }
+        main .titre {
+            background-color: rgb(56, 54, 54);
+            text-align: center;
+            padding: 1px 0;
+            color: white;
+            font-size: 2rem;            
+        }
+        main .titre h3 {
+            font-size: 2rem;
+            color: lightgrey;
+            padding: 0px 20px;
+            display: block;
+            border-radius: 5px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        main .orga {
+            background-color: rgb(56, 54, 54);
+            text-align: center;
+            padding: 0px 0;
+            color: white;
+        }
+        main .orga p {
+            font-size: 1rem;
+            color: lightgrey;
+            padding: 5px 0px;
+            display: block;
+            border-radius: 1px;
+            margin-left: auto;
+            text-align: center;
+
+
+        }
+        footer {
+            background-color: #333131;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+            position: relative;
+        }
+        button {
+            border-radius: 10px;
+        }
+        button a {
+            color: white; /* Couleur blanche */
+            text-decoration: none; /* Supprime le soulignement */
+        }
+
+        button a:visited {
+        color: white; /* Garde la couleur blanche même après la visite */
+        }
+
+        button a:hover {
+        color: #ddd; /* Optionnel : change légèrement la couleur au survol */
+        }
+
+        button a:active {
+        color: white; /* Garde la couleur blanche lorsqu'on clique dessus */
+        }
+        .aram-solo-cup {
+            text-align: center;
+            padding: 15px;
+            background-color: #2d2d2d; /* Couleur de fond de la section */
+        }
+
+        .aram-solo-cup h2 {
+            color: #bfc9d1; /* Couleur du titre */
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .aram-solo-cup p {
+            color: #ccc; /* Couleur du texte */
+            font-size: 16px;
+            max-width: 600px;
+            margin: 0 auto; /* Centrer le texte */
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>ARAM SOLO CUP</span>
+    </div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="classement.html">Classement</a>
+        <a href="Participants.html">Participants</a>
+        <a href="cashprize.html">Cashprize</a>
+        <a href="statistiques.html">Statistiques</a>
+        <a href="regles.html">Règles</a>
+    </nav>
+</header>
+
+<main><header><h1>ARAM SOLO CUP</h1></header></main>
+<main><header class="titre"><h3>Tournois organisés par Nova</h3></header></main>
+<main><header class="orga"><p>Première édition de la Aram Solo Cup avec 20 participants prêts à remporter le cashprize de 50€.<p></header></main>
+
+<div class="content">
+    
+    <h2>Tout savoir</h2>
+    
+    <div class="cards">
+        <div class="card">
+            <img src="participant.png" alt="Participants">
+            <p>Liste des 20 participants.</p>
+            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;"><a href="Participants.html">Participants</a></button>
+        </div>
+        <div class="card">
+            <img src="trophy.png" alt="Cashprize">
+            <p>Répartition des récompenses.</p>
+            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;"><a href="cashprize.html">Cashprize</a></button>
+        </div>
+        <div class="card">
+            <img src="stats.png" alt="Statistiques">
+            <p>Différentes statistiques.</p>
+            <button style="background: green; color: white; padding: 10px; border: none; cursor: pointer;"><a href="statistiques.html">Statistiques</a></button>
+        </div>
+    </div>
+</div>
+<main>
+    <section class="aram-solo-cup">
+        <h2>Qu'est-ce que l'Aram Solo Cup ?</h2>
+        <p>
+            L'Aram Solo Cup est un tournoi organisé par NovaMat sur le jeu 
+            <em>League of Legends</em>, en mode ARAM. Un classement sera établi en fonction 
+            des victoires de chaque joueur sur une période de 3 jours. Attention, chaque joueur 
+            peut être éliminé après 5 défaites lors du défi.
+        </p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2025 NovaMat - Copyright. </p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classement - Aram Solo Cup</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        header {
+            background-color: #333131;
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header nav {
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav a:hover {
+            text-decoration: underline;
+        }
+
+        .banner {
+            background-color: rgb(39, 37, 37);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 2rem;
+        }
+
+        .classement {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .classement-item {
+            display: flex;
+            align-items: center;
+            background: #777;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .classement-item span {
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .classement-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .classement-item1 {
+            display: flex;
+            align-items: center;
+            background: #777;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            margin-left: -50px;
+            margin-right: -50px;
+            color: gold;
+            font-weight: bold;
+        }
+
+        .classement-item1 span {
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .classement-item1 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .classement-item2 {
+            display: flex;
+            align-items: center;
+            background: #777;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            color: silver;
+            font-weight: bold;
+        }
+
+        .classement-item2 span {
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .classement-item2 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .classement-item3 {
+            display: flex;
+            align-items: center;
+            background: #777;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            color: lightsalmon;
+            font-weight: bold;
+        }
+
+        .classement-item3 span {
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .classement-item3 img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .stats {
+            position: relative;
+            background: #555;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            width: 120px;
+            margin:auto;
+            font-size: 0.8rem;
+            font-weight: bold;
+
+        }
+        
+        .stats .nb {
+            color: white
+            padding: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 2rem;
+        }
+
+        .stats div {
+            padding: 5px 10px;
+        }
+        .stats1 {
+            position: relative;
+            background: gold;
+            padding: 15px;
+            border-radius: 8px;
+            color: white;
+            text-align: center;
+            width: 120px;
+            margin:auto;
+            font-size: 0.8rem;
+            font-weight: bold;
+
+        }
+        .stats1 .nb {
+            color: white
+            padding: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            border-radius: 5px;
+            font-size: 2rem;
+        }
+
+        .stats1 div {
+            padding: 5px 10px;
+        }
+
+        footer {
+            background-color: #333131;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="logo.png" alt="Logo">
+        <span>ARAM SOLO CUP</span>
+    </div>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="classement.html">Classement</a>
+        <a href="Participants.html">Participants</a>
+        <a href="cashprize.html">Cashprize</a>
+        <a href="statistiques.html">Statistiques</a>
+        <a href="regles.html">Règles</a>
+    </nav>
+</header>
+
+<div class="banner"><h1>Classement</h1></div>
+
+<div class="classement">
+    <div class="classement-item1">
+        <span>1.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats1">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item2">
+        <span>2.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+    
+    <div class="classement-item3">
+        <span>3.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>4.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>5.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>6.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>7.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>8.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>9.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>10.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>11.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>12.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>13.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>14.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>15.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>16.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>17.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>18.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>19.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+    <div class="classement-item">
+        <span>20.</span>
+        <img src="participant1.png" alt="PP">
+        <span>Pseudo</span>
+        <div class="stats">
+            <div>GAME</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>WIN</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>LOOSE</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>RATIO</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>KILL</div>
+            <div class="nb">2</div>
+        </div>
+        <div class="stats">
+            <div>MORT</div>
+            <div class="nb">2</div>
+        </div><div class="stats">
+            <div>ASSIST</div>
+            <div class="nb">2</div>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2025 NovaMat - Copyright. </p>
+</footer>
+
+</body>
+</html>
